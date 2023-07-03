@@ -13,7 +13,7 @@
     <title>Document</title>
   </head>
   <style>
-    h1{
+    h1 {
       margin: auto;
     }
     .logoheader {
@@ -26,18 +26,15 @@
       background-color: #b7c6e7;
     }
     ul {
-      margin:auto;
+      margin: auto;
       /* position: fixed; */
       z-index: 999;
       padding-bottom: 0.4cm;
-  
     }
     .navbar {
-      
       background-color: #f8f9fa;
-      
     }
-    .navbar  {
+    .navbar {
       font-size: 0.6cm;
     }
     .Logo {
@@ -47,39 +44,69 @@
     .Maintitle {
       font-family: bradley hand cursive;
     }
-   img {
-  --g: 4px;     /* the gap */
-  --b: 12px;    /* border thickness*/
-  --c: #FEADB9; /* the color */
-  
-  
-  padding: calc(var(--g) + var(--b));
-  --_c: #88454500 0 25%, var(--c) 0 50%;
-  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
-  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
-  background:
-    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
-    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
-  background-size: 200% var(--b),var(--b) 200%;
-  cursor: pointer;
-  filter: grayscale(50%);
-  transition: .3s;
-}
-img:hover {
-  --_p: 75%;
-  filter: grayscale(0%);
-}
+    img {
+      --g: 4px; /* the gap */
+      --b: 12px; /* border thickness*/
+      --c: #feadb9; /* the color */
 
-footer{
-  background-color:#b7c6e7 ;
-  margin-top: 0.4cm;
-}
+      padding: calc(var(--g) + var(--b));
+      --_c: #88454500 0 25%, var(--c) 0 50%;
+      --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+      --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+      background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+        var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+      background-size: 200% var(--b), var(--b) 200%;
+      cursor: pointer;
+      filter: grayscale(50%);
+      transition: 0.3s;
+    }
+    img:hover {
+      --_p: 75%;
+      filter: grayscale(0%);
+    }
 
+    footer {
+      background-color: #b7c6e7;
+      margin-top: 0.4cm;
+    }
+    .center {
+      margin: auto;
+    }
+    h3 {
+      font-weight: 600;
+      text-align: center;
+      color: white;
+    }
+    ul {
+      text-align: center;
+      list-style-type: none;
+    }
+    .dev {
+      display: none;
+      border-top: 1px solid black;
+      font-size: x-small;
+      font-weight: 200;
+      text-align: center;
+      color: grey;
+      padding-bottom: 0.1cm;
+    }
+    .movegrid {
+      margin-top: -10cm;
+      margin-left: 1cm;
+    }
+    .movegrid2 {
+      margin-top: -10cm;
+      margin-left: 0cm;
+    }
+    .topRight {
+      width: 8cm;
+      padding-bottom: 2cm;
+    }
   </style>
   <body>
     <div class="logoheader justify-content-center">
       <!-- <a href="/index.html"><img src="/Images/Lgog.png" alt="" id="Logo" /></a> -->
-      <h1 > Chef Christo</h1>
+      <h1>Chef Christo</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button
@@ -116,7 +143,6 @@ footer{
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Something</a>
               <a class="dropdown-item" href="#">Another thing</a>
-             
             </div>
           </li>
           <li class="nav-item">
@@ -128,48 +154,71 @@ footer{
         </ul>
       </div>
     </nav>
-   
 
-      <div class="container footer"
-      >
-    <div class="row">
-      <div class="col" style=" margin-right: 0.4cm;">
-          <img src="./Images/WhatsApp Image 2023-06-03 at 11.17.02 (1).jpeg" alt="" width="400px" id="Grid">
+    <div class="container footer">
+      <div class="row">
+        <div class="col" style="margin-right: 0.4cm">
+          <img
+            src="./Images/WhatsApp Image 2023-06-03 at 11.17.02 (1).jpeg"
+            alt=""
+            width="400px"
+            id="Grid"
+          />
+        </div>
+        <div class="col" style="margin-right: 0.4cm">
+          <img
+            src="/Images/WhatsApp Image 2023-06-03 at 11.17.02.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="col" style="margin-right: 0.4cm">
+          <img src="/Images/new.jpeg"" class="topRight"/>
+        </div>
       </div>
-      <div class = "col" style="" >
-        <img src="/Images/WhatsApp Image 2023-06-03 at 11.17.02.jpeg" alt="">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <img
+            src="/Images/WhatsApp Image 2023-07-03 at 09.08.29.jpeg"
+            style="width: 8cm"
+            class="movegrid"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            src="Images/WhatsApp Image 2023-06-03 at 11.17.02 (2).jpeg"
+            style="width: 8cm"
+            class="movegrid2"
+            alt=""
+          />
+        </div>
       </div>
-    </div></div>
     </div>
     <footer>
-     <div class="container">
-      <div class="row align-items-center">
-        <div class="col justify-content-center">
-          <h3 style="color: lightgrey;">Service we provide</h3>
-          <ul>
-            <li>
-              Stuff you do 
-            </li>
-            <li>
-              Stuff you can do 
-            </li>
-            <li>
-              Stuff you can do 
-    
-            </li>
-          </ul>
-         
-        </div>
-        <div class="col align-self-end justify-content-center" >
-          <h3 style="color: white;">Other links</h3>
-          <ul>
-            <li>Facebook</li>
-            <li>contact us</li>
-            <li>About us</li>
-          </ul>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col check">
+            <h3>Service we provide</h3>
+            <ul>
+              <li>Stuff you do</li>
+              <li>Stuff you can do</li>
+              <li>Stuff you can do</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Other links</h3>
+            <ul class="justify-content-center center">
+              <li>Facebook</li>
+              <li>contact us</li>
+              <li>About us</li>
+            </ul>
+          </div>
         </div>
       </div>
-     </div>
+      <div class="dev">
+        <h5>Made and Hosted by Izak DU plooy</h5>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
